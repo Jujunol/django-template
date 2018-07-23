@@ -17,6 +17,11 @@ Additionally, there is also:
 - The ability to read from an .env file (refer to .env.example)
 - Useful common css helpers built on-top of materialize
 
+## Variations
+We keep different variations/prepackages on different branches
+
+- [API](https://github.com/Jujunol/django-template/tree/api) comes with a backend API system for working with JSON. Please note that does not contain a token auth system. 
+
 
 ## Installation (Linux & Mac)
 
