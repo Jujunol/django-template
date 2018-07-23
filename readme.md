@@ -1,11 +1,15 @@
 # Django Template
 
+## Difference from master
+This branch offers an API setup using Django Rest Framework along with proper testing and an example of using the model with serializers. 
+
 ## Brief
 
 The aim of this project is to take off a lot of the initial building of a react app with django and materialize.
 
 This Django Template comes prepackaged with:
 - Django
+- Django Rest Framework
 - Materialize-Css
 - Webpack
 - React
