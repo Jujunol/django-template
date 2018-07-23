@@ -1,0 +1,20 @@
+# SQLLite
+db.sqlite3
+
+# IDEs
+.idea
+.vscode
+
+# Python
+__pycache__
+
+# Environment
+.env
+env
+venv
+
+# Javascript Frameworks
+node_modules
+
+# Compiled Resources
+static
