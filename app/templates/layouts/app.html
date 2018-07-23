@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+
+    {% include "partials/sidebar.html" %}
+
+    <div class="container row flex" id="root">
+        {% block main %}{% endblock %}
+    </div>
+
+{% endblock %}

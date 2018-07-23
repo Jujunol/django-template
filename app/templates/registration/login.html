@@ -1,0 +1,15 @@
+{% extends "layouts/card.html" %}
+{% from "macros/models.html" import gen_form %}
+
+{% block card %}
+
+    <h1 class="mtop-0 xx-large-text">Login</h1>
+
+    {{ gen_form(csrf_input, form, button_text='Login') }}
+
+    <p>
+        Don't have an account?
+        <a href="{{ url('register') }}">Sign up!</a>
+    </p>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title or 'No Title' }}</title>
+
+    <link rel="stylesheet" href="{{ static("app.css") }}">
+</head>
+<body>
+
+{% block body %}{% endblock %}
+
+<script src="{{ static('app.js') }}"></script>
+
+{% if settings.LIVE_RELOAD %}
+    <script src="{{ settings.LIVE_RELOAD }}"></script>
+{% endif %}
+
+</body>
+</html>

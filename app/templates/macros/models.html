@@ -1,0 +1,39 @@
+{% macro gen_form(csrf_input, form, button_text) %}
+    {% if form.non_field_errors() %}
+        <div class="block red lighten-1">
+            <i class="material-icons">error</i>
+            {{ form.non_field_errors() }}
+        </div>
+    {% endif %}
+
+    <form action="" method="post">
+        {{ csrf_input }}
+
+        {% for field in form %}
+
+            <div class="red-text">{{ field.errors }}</div>
+            <div class="input-field">
+                {{ field.label_tag() }}
+                {{ field }}
+            </div>
+
+        {% endfor %}
+
+        <button class="btn full-width waves-effect">{{ button_text }}</button>
+    </form>
+{% endmacro %}
+
+{% macro confirm_delete(csrf_input, item_name='', cancel_url='') %}
+    <form action="" method="post">
+        {{ csrf_input }}
+
+        <h4>Are you sure you want to delete {{ item_name or 'this item'}}</h4>
+
+        <div class="right">
+            <a href="{{ cancel_url }}" class="btn-flat waves-effect">Wait, never mind</a>
+            <button class="btn red darken-4 waves-effect">Delete It!</button>
+        </div>
+
+        <div class="clearfix"></div>
+    </form>
+{% endmacro %}
