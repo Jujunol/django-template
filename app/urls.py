@@ -17,5 +17,6 @@ urlpatterns = [
     path('', index, name='index'),
     path('home', home, name='home'),
     path('admin/', admin.site.urls),
+    path('api/', include('api.urls')),
     path('accounts/', include('users.urls')),
 ]
