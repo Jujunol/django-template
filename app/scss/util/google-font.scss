@@ -1,0 +1,30 @@
+/**
+ * Referenced from https://codepen.io/HugoGiraudel/pen/aEzLf
+ */
+@mixin googleFont($fonts...) {
+
+  $url: "https://fonts.googleapis.com/css?family=";
+  $fontIndex: 0;
+
+  @each $name in $fonts {
+    $fontIndex: $fontIndex + 1;
+    $fontWordIndex: 0;
+
+    @each $word in $name {
+      $fontWordIndex: $fontWordIndex + 1;
+      $url: $url + $word;
+
+      @if $fontWordIndex < length($name) {
+        $url: $url + "+";
+      }
+    }
+
+    @if $fontIndex < length($fonts) {
+      $url: $url + "|";
+    }
+
+  }
+
+  @import url($url);
+
+}

@@ -1,0 +1,21 @@
+$directions: "top", "right", "bottom", "left";
+
+@for $i from 0 to 30 {
+  $space: $i * 5;
+
+  @each $dir in $directions {
+    .p#{$dir}-#{$space} {
+      padding-#{$dir}: #{$space}px;
+    }
+    .p#{$dir}-#{$space}i {
+      padding-#{$dir}: #{$space}px !important;
+    }
+  }
+
+  .p#{$space} {
+    padding: #{$space}px;
+  }
+  .p#{$space}i {
+    padding: #{$space}px !important;
+  }
+}

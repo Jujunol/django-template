@@ -1,0 +1,5 @@
+$materialIcons: Material Icons;
+$roboto: Roboto;
+$lato: Lato;
+
+@include googleFont($materialIcons, $roboto, $lato);

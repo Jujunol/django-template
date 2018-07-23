@@ -1,0 +1,11 @@
+.block {
+  @extend .flex;
+
+  margin: 10px 0;
+  padding: 0 10px;
+
+  > i {
+    @extend .vcenter;
+    padding-right: 10px;
+  }
+}

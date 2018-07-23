@@ -1,0 +1,47 @@
+.-line-height {
+    line-height: normal;
+}
+
+.--line-height {
+    line-height: normal !important;
+}
+
+.-float {
+    float: none;
+}
+
+.--float {
+    float: none !important;
+}
+
+.-display {
+    display: none;
+}
+
+.wrap {
+    white-space: pre-wrap;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.fatten {
+    padding: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.overlay {
+    z-index: 999;
+}
+
+.fit-width {
+    max-width: 100%;
+}

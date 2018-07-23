@@ -1,0 +1,14 @@
+body {
+  min-height: 100vh;
+
+  display: flex;
+
+  background-color: $background-grey;
+  font-family: $roboto, $lato, sans-serif;
+
+  > #app, > .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

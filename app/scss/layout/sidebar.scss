@@ -1,0 +1,11 @@
+.sidebar {
+  @extend .sidenav;
+
+  position: relative;
+  transform: none;
+
+  height: 100vh;
+  max-width: 300px;
+
+  padding-bottom: 0;
+}
