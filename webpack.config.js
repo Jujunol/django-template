@@ -13,13 +13,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js.?$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
                     presets: ['react', 'env'],
                     plugins: ['transform-class-properties'],
                 },
+                resolve: {
+                    extensions: ['.js', '.jsx'],
+                }
             },
             {
                 test: /\.scss$/,
