@@ -32,8 +32,8 @@ We keep different variations/prepackages on different branches
 1. `cp .env.example .env`
 
 ### Setting up the virtualenv (optional but recommended)
-1. `python -m virtualenv env`
-1. `env/bin/activate`
+1. `python -m virtualenv venv`
+1. `venv/bin/activate`
 
 ### Setting up Django
 1. `pip install -r requirements.txt`
